@@ -772,6 +772,14 @@ h1, h2, h3, h4, h5,
 		background-position: top center;
 		@include transition(.3s);
 	}
+	.comic{
+		width: 10%;
+		height: 450px;
+		display: block;
+		margin: 0 auto;
+		background-position: top center;
+		@include transition(.3s);
+	}
 	.text{
 		width: 100%;
 		opacity: 1;
