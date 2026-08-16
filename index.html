@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body data-spy="scroll" data-target="#ftco-nav-scrollspy-1, #ftco-nav-scrollspy-2" data-offset="300">
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -35,9 +35,13 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
+	        <ul class="navbar-nav nav ml-auto" id="ftco-nav-scrollspy-1">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	        </ul>
+	        <ul class="navbar-nav nav">
 	          <li class="nav-item"><a href="https://docs.focism.com" class="nav-link"><span>Documentation</span></a></li>
+	        </ul>
+	        <ul class="navbar-nav nav" id="ftco-nav-scrollspy-2">
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
 	        </ul>
@@ -301,9 +305,6 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  
   <script src="js/main.js"></script>
     
   </body>
