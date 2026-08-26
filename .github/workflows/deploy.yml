@@ -1,0 +1,14 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, focism-deploy]
+    steps:
+      - name: Sync live site clone
+        run: |
+          git -C /home/race-control/.docker/swag/config/focism.com fetch --prune origin
+          git -C /home/race-control/.docker/swag/config/focism.com reset --hard origin/master
